@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>HÄMMERLE KOMMT – 24.10.2026 Schwarzwaldhalle Gärtringen | DRK Gärtringen</title>
+<meta name="description" content="Bernd Kohlhepp als Hämmerle am 24. Oktober 2026 in der Schwarzwaldhalle Gärtringen. Benefizveranstaltung zugunsten des DRK Ortsvereins Gärtringen. Tickets ab 25 €.">
+<meta property="og:title" content="HÄMMERLE KOMMT – und bleibt bis er geht">
+<meta property="og:description" content="24. Oktober 2026 · Schwarzwaldhalle Gärtringen · Benefiz für den DRK Ortsverein Gärtringen">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://haemmerle.drk-gaertringen.de/">
+<meta name="theme-color" content="#73D1F5">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' fill='%2373D1F5'/%3E%3Cpath d='M26 8h12v18h18v12H38v18H26V38H8V26h18z' fill='%23E30613'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --blue:#73D1F5;
+    --blue-soft:#EDF8FD;
+    --line:#CDE9F7;
+    --ink:#0B4C66;
+    --ink-soft:#5A8298;
+    --red:#E30613;
+    --maxw:1080px;
+    --narrow:640px;
+  }
+  *,*::before,*::after{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{
+    margin:0;font-family:Inter,system-ui,-apple-system,"Segoe UI",sans-serif;
+    color:var(--ink);background:#fff;font-size:18px;line-height:1.75;-webkit-font-smoothing:antialiased;
+  }
+  h1,h2,h3{font-family:Anton,"Arial Black",Impact,sans-serif;font-weight:400;line-height:.92;text-transform:uppercase}
+  a{color:inherit}
+  img{max-width:100%;height:auto;display:block}
+  .wrap{width:min(100% - 2.5rem,var(--maxw));margin-inline:auto}
+  .narrow{width:min(100% - 2.5rem,var(--narrow));margin-inline:auto}
+
+  .topbar{position:sticky;top:0;z-index:50;background:#fff;box-shadow:0 4px 6px -1px rgba(0,0,0,.08),0 2px 4px -2px rgba(0,0,0,.06)}
+  .topbar .wrap{display:flex;align-items:center;gap:1rem;height:5rem;justify-content:space-between}
+  .brand{display:flex;align-items:center;gap:1rem;text-decoration:none}
+  .brand img{width:clamp(112px,18vw,150px)}
+  .brand-div{width:1px;height:3.5rem;background:#D6DDE2;flex:none}
+  .brand-sub{display:flex;flex-direction:column;line-height:1.3;font-size:.85rem;color:var(--ink)}
+  @media (max-width:560px){.brand{gap:.65rem}.brand-div{display:none}.brand-sub{font-size:.72rem}}
+
+  .nav{display:flex;gap:.25rem;font-size:.9rem;font-weight:600}
+  .nav a{text-decoration:none;color:var(--ink);padding:.5rem .75rem;border-radius:.375rem}
+  .nav a:hover{background:var(--blue-soft);color:var(--red)}
+  .topbar-end{display:flex;align-items:center;gap:1rem}
+  @media (max-width:920px){.nav,.topbar-end .btn{display:none}}
+
+  .burger{display:none;border:0;background:transparent;color:var(--ink);padding:.5rem;border-radius:.375rem;cursor:pointer;line-height:0}
+  .burger:hover{background:var(--blue-soft)}
+  .burger svg{width:1.5rem;height:1.5rem}
+  @media (max-width:920px){.burger{display:block}}
+
+  .mobilenav{display:none;border-top:1px solid var(--line);padding:.5rem 0 .9rem;
+    width:min(100% - 2.5rem,var(--maxw));margin-inline:auto}
+  .mobilenav[data-open]{display:block}
+  @media (min-width:921px){.mobilenav{display:none!important}}
+  .mobilenav a{display:block;padding:.6rem .75rem;font-weight:600;text-decoration:none;color:var(--ink)}
+  .mobilenav a:not(.btn):hover{background:var(--blue-soft)}
+  .mobilenav .btn--pill{display:block;text-align:center;margin-top:.75rem;color:#fff}
+
+  .btn{
+    display:inline-flex;align-items:center;gap:.5rem;background:var(--red);color:#fff;text-decoration:none;
+    font-weight:800;letter-spacing:.12em;text-transform:uppercase;font-size:.78rem;
+    padding:1.05rem 2.2rem;border:2px solid var(--red);transition:background .15s ease,color .15s ease;
+  }
+  .btn:hover{background:#fff;color:var(--red)}
+  .btn--ghost{background:transparent;color:var(--ink);border-color:var(--line)}
+  .btn--ghost:hover{background:transparent;color:var(--red);border-color:var(--red)}
+  .btn--light{background:#fff;color:var(--red);border-color:#fff}
+  .btn--light:hover{background:transparent;color:#fff;border-color:#fff}
+  .btn--sm{padding:.55rem 1.2rem;font-size:.7rem}
+  /* Spenden-Button-Optik der DRK-Hauptseite */
+  .btn--pill{border:0;border-radius:999px;letter-spacing:.02em;text-transform:none;font-size:.9rem;font-weight:600;
+    padding:.55rem 1.35rem;background:linear-gradient(to bottom right,rgb(165,30,15),rgb(230,0,5))}
+  .btn--pill:hover{color:#fff;background:linear-gradient(to bottom right,rgb(140,25,12),rgb(200,0,3))}
+
+  /* Hero: Text links, Freisteller sitzt bündig am rechten Rand */
+  .hero{position:relative;overflow:hidden;text-align:left;
+    padding:clamp(3rem,7vw,5.5rem) 0 clamp(3rem,6vw,5rem);
+    background:linear-gradient(180deg,#fff 55%,var(--blue-soft) 100%)}
+  .hero .wrap{position:relative;z-index:2;padding-right:clamp(200px,30vw,440px)}
+  h1{margin:0;font-size:clamp(3rem,10vw,8rem);color:var(--ink);letter-spacing:-.01em}
+  h1 span{display:block;color:var(--red)}
+  .h1-sub{max-width:32ch;margin:1.8rem 0 0;color:var(--ink-soft);font-size:clamp(1.05rem,2vw,1.3rem)}
+  .hero-line{margin:2rem 0 2.4rem;font-weight:800;letter-spacing:.06em;text-transform:uppercase;font-size:.85rem;
+    display:flex;flex-wrap:wrap;gap:.4rem 1.2rem}
+  .hero-line i{font-style:normal;color:var(--red)}
+  /* Uhrzeiten bleiben beim Umbruch als Einheit zusammen */
+  .hero-times{display:inline-flex;align-items:center;gap:.4rem 1.2rem;white-space:nowrap}
+  .hero-cta{display:flex;flex-wrap:wrap;gap:1rem}
+
+  .hero-figure{position:absolute;right:0;bottom:0;z-index:1;pointer-events:none;
+    width:clamp(230px,32vw,470px);
+    filter:drop-shadow(0 22px 40px rgba(11,76,102,.24))}
+  .hero-figure img{width:100%}
+
+  @media (max-width:860px){
+    .hero{text-align:center;padding-bottom:clamp(9rem,34vw,13rem)}
+    .hero .wrap{padding-right:0}
+    .hero-line,.hero-cta{justify-content:center}
+    .h1-sub{margin-inline:auto}
+    /* Datum und Uhrzeiten stehen jeweils zentriert auf einer eigenen Zeile */
+    .hero-line{flex-direction:column;align-items:center;gap:.35rem;font-size:.8rem}
+    .hero-times{gap:.4rem .9rem}
+    /* Preis steht mobil bereits in der Ticket-Leiste */
+    .hero-line .hide-m{display:none}
+    /* mobil steckt der Freisteller ausschließlich im mitlaufenden Element unten rechts */
+    .hero-figure{display:none}
+  }
+
+  /* Freisteller läuft ab dem Ende des Heros in der rechten unteren Ecke mit */
+  .floater{position:fixed;right:clamp(-.5rem,1vw,1.5rem);bottom:0;z-index:45;pointer-events:none;
+    width:clamp(170px,20vw,300px);
+    filter:drop-shadow(0 18px 34px rgba(11,76,102,.28));
+    opacity:0;visibility:hidden;transform:translateY(40px);
+    transition:opacity .4s ease,transform .4s ease,width .4s ease,visibility 0s linear .4s}
+  .floater.is-scrolled{opacity:1;visibility:visible;transform:none;transition-delay:0s}
+  .floater img{width:100%}
+  @media (max-width:1180px){.floater{width:clamp(150px,17vw,220px)}}
+  @media (max-width:860px){
+    /* immer sichtbar, oberhalb der Ticket-Leiste – und beim Scrollen kleiner */
+    .floater{opacity:1;visibility:visible;transform:none;transition-delay:0s;
+      bottom:4rem;right:.2rem;width:min(46vw,240px)}
+    .floater.is-scrolled{width:min(28vw,140px)}
+  }
+  @media (prefers-reduced-motion:reduce){.floater{transition:none;transform:none}}
+
+  section{padding:clamp(4.5rem,9vw,8rem) 0;text-align:center}
+  h2{font-size:clamp(2.4rem,7vw,4.4rem);margin:0 0 1.4rem}
+  .lead{font-size:1.12rem;color:var(--ink-soft);margin:0 auto 3.5rem;max-width:46ch}
+
+  .facts{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:3rem 2rem;text-align:center}
+  .fact h3{font-size:1.1rem;margin:0 0 .6rem}
+  .fact p{margin:0;font-size:.96rem;color:var(--ink-soft)}
+  .fact::before{content:"";display:block;width:26px;height:3px;background:var(--red);margin:0 auto 1.2rem}
+
+  .portrait{max-width:420px;margin:0 auto 2.5rem}
+  .caption{font-size:.7rem;letter-spacing:.22em;text-transform:uppercase;color:var(--ink-soft);margin-top:1rem}
+  .body-copy p{margin:0 0 1.3rem;text-align:left}
+
+  .quotes{background:var(--blue-soft)}
+  .quote{max-width:44ch;margin:0 auto;padding:2.6rem 0;border-bottom:1px solid var(--line)}
+  .quote:first-of-type{border-top:1px solid var(--line)}
+  .quote p{font-family:Anton,sans-serif;text-transform:none;font-size:clamp(1.2rem,2.6vw,1.7rem);line-height:1.35;margin:0 0 1rem;letter-spacing:.01em}
+  .quote cite{font-style:normal;font-size:.68rem;letter-spacing:.26em;text-transform:uppercase;color:var(--red);font-weight:800}
+
+  .prices{display:flex;justify-content:center;gap:clamp(2.5rem,9vw,6rem);flex-wrap:wrap;margin-bottom:3rem}
+  .price .amount{font-family:Anton,sans-serif;font-size:clamp(3.4rem,9vw,5.4rem);line-height:.9;color:var(--red)}
+  .price .what{font-size:.7rem;letter-spacing:.26em;text-transform:uppercase;margin-top:.8rem;font-weight:800}
+  .price small{display:block;color:var(--ink-soft);margin-top:.4rem;font-size:.86rem}
+  .vvk{list-style:none;margin:3.5rem auto 0;padding:0;max-width:520px}
+  .vvk li{padding:1.1rem 0;border-top:1px solid var(--line)}
+  .vvk li:last-child{border-bottom:1px solid var(--line)}
+  .vvk .name{font-weight:800;display:block}
+  .vvk .addr{font-size:.92rem;color:var(--ink-soft)}
+
+  .infolist{list-style:none;margin:0 auto 3rem;padding:0;max-width:560px;text-align:left}
+  .infolist li{display:flex;gap:1.5rem;padding:.95rem 0;border-top:1px solid var(--line)}
+  .infolist li:last-child{border-bottom:1px solid var(--line)}
+  .infolist .k{flex:0 0 8rem;font-size:.68rem;letter-spacing:.2em;text-transform:uppercase;color:var(--ink-soft);padding-top:.4rem}
+  .infolist .v{font-weight:600}
+  iframe.map{width:100%;height:380px;border:0}
+
+  .final{background:var(--red);color:#fff}
+  .final h2{font-size:clamp(2.8rem,9vw,6rem);margin-bottom:1.6rem}
+  .final p{max-width:48ch;margin:0 auto 2.6rem;font-size:1.05rem}
+
+  footer{background:#fff;color:var(--ink-soft);padding:3.5rem 0;font-size:.88rem;text-align:center}
+  footer .cols{display:flex;justify-content:center;gap:3rem;flex-wrap:wrap}
+  footer strong{color:var(--ink);display:block;margin-bottom:.4rem;font-size:.68rem;letter-spacing:.26em;text-transform:uppercase}
+  .credit{margin-top:2.5rem;padding-top:1.3rem;border-top:1px solid var(--line);font-size:.76rem}
+
+  .sticky-buy{position:fixed;left:0;right:0;bottom:0;z-index:60;display:none;padding:.7rem 1rem;
+    background:var(--ink);gap:.7rem;align-items:center;justify-content:space-between}
+  .sticky-buy span{color:#fff;font-weight:800;font-size:.85rem}
+  .sticky-buy .btn:hover{background:var(--red);color:#fff}
+  @media (max-width:920px){.sticky-buy{display:flex}body{padding-bottom:4.5rem}}
+</style>
+</head>
+<body>
+
+<header class="topbar">
+  <div class="wrap">
+    <a class="brand" href="#top">
+      <img src="assets/drk-logo.svg" alt="Deutsches Rotes Kreuz" width="150" height="48">
+      <span class="brand-div" aria-hidden="true"></span>
+      <span class="brand-sub"><span>Ortsverein</span><span>Gärtringen</span></span>
+    </a>
+    <div class="topbar-end">
+      <nav class="nav" aria-label="Hauptnavigation">
+        <a href="#event">Event</a>
+        <a href="#haemmerle">Hämmerle</a>
+        <a href="#presse">Presse</a>
+        <a href="#tickets">Tickets</a>
+        <a href="#ort">Anfahrt</a>
+      </nav>
+      <a class="btn btn--pill" href="https://www.reservix.de/tickets-haemmerle-kommt-und-bleibt-bis-er-geht-in-gaertringen-schwarzwaldhalle-am-24-10-2026/e2494737" target="_blank" rel="noopener">Tickets</a>
+      <button class="burger" type="button" aria-label="Menü" aria-expanded="false" aria-controls="mobilenav">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 6h16M4 12h16M4 18h16"/></svg>
+      </button>
+    </div>
+  </div>
+  <nav class="mobilenav" id="mobilenav" aria-label="Navigation (mobil)">
+    <a href="#event">Event</a>
+    <a href="#haemmerle">Hämmerle</a>
+    <a href="#presse">Presse</a>
+    <a href="#tickets">Tickets</a>
+    <a href="#ort">Anfahrt</a>
+    <a class="btn btn--pill" href="https://www.reservix.de/tickets-haemmerle-kommt-und-bleibt-bis-er-geht-in-gaertringen-schwarzwaldhalle-am-24-10-2026/e2494737" target="_blank" rel="noopener">Tickets kaufen</a>
+  </nav>
+</header>
+
+<main id="top">
+
+  <section class="hero">
+    <div class="wrap">
+      <h1>Hämmerle<span>kommt!</span></h1>
+      <p class="h1-sub">… und bleibt, bis er geht. Bernd Kohlhepp live in der Schwarzwaldhalle Gärtringen.</p>
+      <p class="hero-line">
+        <span>Sa 24. Oktober 2026</span><i class="hide-m">+</i>
+        <span class="hero-times"><span>Einlass 19:00</span><i>+</i><span>Beginn 20:00</span></span><i class="hide-m">+</i>
+        <span class="hide-m">ab 25 €</span>
+      </p>
+      <div class="hero-cta">
+        <a class="btn" href="https://www.reservix.de/tickets-haemmerle-kommt-und-bleibt-bis-er-geht-in-gaertringen-schwarzwaldhalle-am-24-10-2026/e2494737" target="_blank" rel="noopener">Tickets online kaufen</a>
+        <a class="btn btn--ghost" href="#tickets">Vorverkaufsstellen</a>
+      </div>
+    </div>
+    <div class="hero-figure">
+      <img src="assets/haemmerle-cutout.png" alt="Bernd Kohlhepp als Hämmerle" width="900" height="1081" fetchpriority="high">
+    </div>
+  </section>
+
+  <section id="event">
+    <div class="wrap">
+      <h2>Ein Abend, der<br>doppelt gut tut</h2>
+      <p class="lead">Schwäbisches Kabarett vom Feinsten – und jede Eintrittskarte hilft dem DRK Ortsverein Gärtringen bei der Beschaffung neuer Einsatzfahrzeuge.</p>
+      <div class="facts">
+        <div class="fact">
+          <h3>Samstag, 24.10.2026</h3>
+          <p>Einlass ab 19:00 Uhr, Beginn 20:00 Uhr. Freie Platzwahl – frühzeitiges Kommen empfohlen.</p>
+        </div>
+        <div class="fact">
+          <h3>Schwarzwaldhalle</h3>
+          <p>Steingrubenweg 10, 71116 Gärtringen. Parkplätze direkt an der Halle.</p>
+        </div>
+        <div class="fact">
+          <h3>Bewirtung</h3>
+          <p>Snacks, warme Speisen und Getränke aller Art – serviert vom DRK Ortsverein Gärtringen.</p>
+        </div>
+        <div class="fact">
+          <h3>100 % Benefiz</h3>
+          <p>Der komplette Erlös des Abends fließt in die Fahrzeugbeschaffung 2026 und 2027.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="haemmerle">
+    <div class="narrow">
+      <h2>Wer ist Hämmerle?</h2>
+      <div class="body-copy">
+        <p>Seit Jahren treibt diese sonderbare Gestalt auf den Bühnen und Fernsehschirmen Süddeutschlands ihr Unwesen und erklärt uns auf unverkennbare Weise die Welt.</p>
+        <p>Hinter dem Kultschwaben steckt <strong>Bernd Kohlhepp</strong> – Schauspieler, Autor und Kabarettist, seit den 90er Jahren eine feste Größe der deutschen Comedy-Szene. Grund genug für ein „HÄMMERLE KOMMT“ mit den unterhaltsamsten Szenen und schönsten Songs der vergangenen Jahre.</p>
+        <p>Wie immer tanzt, singt – und schwadroniert der Improvisationskünstler mit dem Publikum. Wer Bernd Kohlhepp kennt, weiß: <strong>keine Vorstellung ist wie die andere.</strong></p>
+      </div>
+    </div>
+  </section>
+
+  <section id="presse" class="quotes">
+    <div class="wrap">
+      <h2>Pressestimmen</h2>
+      <div style="margin-top:3rem">
+        <blockquote class="quote">
+          <p>„Dieser Mann ist eine Wucht. Was kann der nicht? Als Kabarettist, Dichter, Sänger, Tänzer, Entertainer fährt er die Früchte aus allen Genres seines Schaffens auf.“</p>
+          <cite>Schwäbische Zeitung</cite>
+        </blockquote>
+        <blockquote class="quote">
+          <p>„Virtuos geht Kohlhepp mit den vielen Nuancen der schwäbischen Mundart um, setzt Akzente und bleibt auf hohem Niveau.“</p>
+          <cite>Presseauszug</cite>
+        </blockquote>
+        <blockquote class="quote">
+          <p>„Ein herrlicher, unbeschwerter Abend zum Lachen und zum Nachdenken.“</p>
+          <cite>Presseauszug</cite>
+        </blockquote>
+      </div>
+    </div>
+  </section>
+
+  <section id="tickets">
+    <div class="wrap">
+      <h2>Karten sichern</h2>
+      <p class="lead">Freie Platzwahl – wer früher kommt, sitzt weiter vorne.</p>
+      <div class="prices">
+        <div class="price">
+          <div class="amount">25 €</div>
+          <div class="what">Vorverkauf</div>
+          <small>online &amp; an allen Vorverkaufsstellen</small>
+        </div>
+        <div class="price">
+          <div class="amount">28 €</div>
+          <div class="what">Abendkasse</div>
+          <small>sofern noch Karten verfügbar</small>
+        </div>
+      </div>
+      <a class="btn" href="https://www.reservix.de/tickets-haemmerle-kommt-und-bleibt-bis-er-geht-in-gaertringen-schwarzwaldhalle-am-24-10-2026/e2494737" target="_blank" rel="noopener">Online bei Reservix buchen</a>
+      <ul class="vvk">
+        <li><span class="name">Das Blumenleben</span><span class="addr">Hauptstraße 10, Gärtringen</span></li>
+        <li><span class="name">Edeka Aktiv Markt Weinle</span><span class="addr">Reinhardstraße 27–29, Gärtringen</span></li>
+        <li><span class="name">Gäubote-Ticketshop</span><span class="addr">Herrenberg</span></li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="ort">
+    <div class="wrap">
+      <h2>Ort &amp; Ablauf</h2>
+      <ul class="infolist">
+        <li><span class="k">Ort</span><span class="v">Schwarzwaldhalle Gärtringen<br>Steingrubenweg 10, 71116 Gärtringen</span></li>
+        <li><span class="k">Einlass</span><span class="v">19:00 Uhr</span></li>
+        <li><span class="k">Beginn</span><span class="v">20:00 Uhr</span></li>
+        <li><span class="k">Bestuhlung</span><span class="v">Freie Platzwahl</span></li>
+        <li><span class="k">Verpflegung</span><span class="v">Snacks, warme Speisen &amp; Getränke</span></li>
+        <li><span class="k">Veranstalter</span><span class="v">DRK Ortsverein Gärtringen e.&nbsp;V.</span></li>
+      </ul>
+      <iframe class="map" title="Karte: Schwarzwaldhalle Gärtringen" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+        src="https://www.openstreetmap.org/export/embed.html?bbox=8.8796%2C48.6405%2C8.8996%2C48.6505&amp;layer=mapnik&amp;marker=48.645544%2C8.889564"></iframe>
+    </div>
+  </section>
+
+  <section id="zweck" class="final">
+    <div class="wrap">
+      <h2>Lachen,<br>das hilft.</h2>
+      <p>Der DRK Ortsverein Gärtringen steht durch zwei unmittelbar aufeinanderfolgende Fahrzeugersatzbeschaffungen in den Jahren 2026 und 2027 vor erheblichen finanziellen Belastungen. Jede verkaufte Eintrittskarte hilft!</p>
+      <a class="btn btn--light" href="https://www.reservix.de/tickets-haemmerle-kommt-und-bleibt-bis-er-geht-in-gaertringen-schwarzwaldhalle-am-24-10-2026/e2494737" target="_blank" rel="noopener">Jetzt Ticket kaufen &amp; unterstützen</a>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="cols">
+      <div>
+        <strong>Veranstalter</strong>
+        DRK Ortsverein Gärtringen e.&nbsp;V.<br>
+        <a href="https://drk-gaertringen.de">drk-gaertringen.de</a>
+      </div>
+      <div>
+        <strong>Veranstaltungsort</strong>
+        Schwarzwaldhalle Gärtringen<br>
+        Steingrubenweg 10, 71116 Gärtringen
+      </div>
+      <div>
+        <strong>Termin</strong>
+        Sa, 24. Oktober 2026<br>
+        Einlass 19:00 · Beginn 20:00 Uhr
+      </div>
+    </div>
+    <p class="credit">Mit freundlicher Unterstützung von EDEKA Weinle, Zinser, der Kindler, Kreissparkasse Böblingen und Sonnen-Apotheke. Foto Bernd Kohlhepp &copy; MRP Studio.<br>
+    Impressum &amp; Datenschutz siehe drk-gaertringen.de</p>
+  </div>
+</footer>
+
+<div class="floater" aria-hidden="true">
+  <img src="assets/haemmerle-cutout.png" alt="" width="900" height="1081">
+</div>
+
+<div class="sticky-buy">
+  <span>25 € Vorverkauf</span>
+  <a class="btn btn--sm" href="https://www.reservix.de/tickets-haemmerle-kommt-und-bleibt-bis-er-geht-in-gaertringen-schwarzwaldhalle-am-24-10-2026/e2494737" target="_blank" rel="noopener">Tickets</a>
+</div>
+
+<script>
+  (function(){
+    var burger = document.querySelector('.burger');
+    var mobilenav = document.getElementById('mobilenav');
+    if(burger && mobilenav){
+      var toggle = function(open){
+        burger.setAttribute('aria-expanded', String(open));
+        if(open){ mobilenav.setAttribute('data-open',''); } else { mobilenav.removeAttribute('data-open'); }
+      };
+      burger.addEventListener('click', function(){
+        toggle(burger.getAttribute('aria-expanded') !== 'true');
+      });
+      mobilenav.addEventListener('click', function(e){
+        if(e.target.closest('a')) toggle(false);
+      });
+    }
+
+    var hero = document.querySelector('.hero');
+    var floater = document.querySelector('.floater');
+    if(!hero || !floater) return;
+
+    if(!('IntersectionObserver' in window)){
+      floater.classList.add('is-scrolled');
+      return;
+    }
+    // Desktop: einblenden, sobald der Hero oben raus ist – mobil: verkleinern
+    new IntersectionObserver(function(entries){
+      floater.classList.toggle('is-scrolled', !entries[0].isIntersecting);
+    },{threshold:0}).observe(hero);
+  })();
+</script>
+
+</body>
+</html>
