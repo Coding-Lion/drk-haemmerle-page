@@ -167,6 +167,13 @@
   .infolist .v{font-weight:600}
   iframe.map{width:100%;height:380px;border:0}
 
+  .sponsors{background:var(--blue-soft)}
+  .sponsor-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:1.25rem;margin-bottom:3rem}
+  .sponsor{background:#fff;border:1px solid var(--line);padding:1.75rem 1.5rem;display:flex;align-items:center;justify-content:center;min-height:9rem}
+  .sponsor img{max-height:5.5rem;width:auto;max-width:100%;object-fit:contain}
+  @media (max-width:560px){.sponsor{min-height:7.5rem}.sponsor img{max-height:4.5rem}}
+  .sponsors .note{margin:0 auto;max-width:46ch;font-size:.95rem;color:var(--ink-soft)}
+
   .final{background:var(--red);color:#fff}
   .final h2{font-size:clamp(2.8rem,9vw,6rem);margin-bottom:1.6rem}
   .final p{max-width:48ch;margin:0 auto 2.6rem;font-size:1.05rem}
@@ -199,6 +206,7 @@
         <a href="#presse">Presse</a>
         <a href="#tickets">Tickets</a>
         <a href="#ort">Anfahrt</a>
+        <a href="#sponsoren">Sponsoren</a>
       </nav>
       <a class="btn btn--pill" href="https://www.reservix.de/tickets-haemmerle-kommt-und-bleibt-bis-er-geht-in-gaertringen-schwarzwaldhalle-am-24-10-2026/e2494737" target="_blank" rel="noopener">Tickets</a>
       <button class="burger" type="button" aria-label="Menü" aria-expanded="false" aria-controls="mobilenav">
@@ -212,6 +220,7 @@
     <a href="#presse">Presse</a>
     <a href="#tickets">Tickets</a>
     <a href="#ort">Anfahrt</a>
+    <a href="#sponsoren">Sponsoren</a>
     <a class="btn btn--pill" href="https://www.reservix.de/tickets-haemmerle-kommt-und-bleibt-bis-er-geht-in-gaertringen-schwarzwaldhalle-am-24-10-2026/e2494737" target="_blank" rel="noopener">Tickets kaufen</a>
   </nav>
 </header>
@@ -334,6 +343,31 @@
     </div>
   </section>
 
+  <section id="sponsoren" class="sponsors">
+    <div class="wrap">
+      <h2>Danke an<br>unsere Sponsoren</h2>
+      <p class="lead">Ohne die Unterstützung dieser Unternehmen wäre der Benefizabend nicht möglich.</p>
+      <div class="sponsor-grid">
+        <div class="sponsor">
+          <img src="assets/sponsors/edeka-weinle.png" alt="EDEKA Weinle" width="900" height="421" loading="lazy">
+        </div>
+        <div class="sponsor">
+          <img src="assets/sponsors/zinser.png" alt="Zinser – Gartenbaustoffe, Baggerarbeiten, Reifen" width="900" height="436" loading="lazy">
+        </div>
+        <div class="sponsor">
+          <img src="assets/sponsors/der-kindler.png" alt="der Kindler – Die Heizung. Das Bad." width="900" height="447" loading="lazy">
+        </div>
+        <div class="sponsor">
+          <img src="assets/sponsors/kreissparkasse-boeblingen.png" alt="Kreissparkasse Böblingen" width="900" height="306" loading="lazy">
+        </div>
+        <div class="sponsor">
+          <img src="assets/sponsors/sonnen-apotheke.png" alt="Sonnen-Apotheke Ingrid Darda e. K." width="900" height="286" loading="lazy">
+        </div>
+      </div>
+      <p class="note">Sie möchten die Benefizveranstaltung ebenfalls unterstützen? Melden Sie sich beim DRK Ortsverein Gärtringen.</p>
+    </div>
+  </section>
+
   <section id="zweck" class="final">
     <div class="wrap">
       <h2>Lachen,<br>das hilft.</h2>
@@ -362,7 +396,7 @@
         Einlass 19:00 · Beginn 20:00 Uhr
       </div>
     </div>
-    <p class="credit">Mit freundlicher Unterstützung von EDEKA Weinle, Zinser, der Kindler, Kreissparkasse Böblingen und Sonnen-Apotheke. Foto Bernd Kohlhepp &copy; MRP Studio.<br>
+    <p class="credit">Mit freundlicher Unterstützung unserer <a href="#sponsoren">Sponsoren</a>. Foto Bernd Kohlhepp &copy; MRP Studio.<br>
     Impressum &amp; Datenschutz siehe drk-gaertringen.de</p>
   </div>
 </footer>
